@@ -1,36 +1,35 @@
 import styled from 'styled-components';
 
 export const StyledGallery = styled.div`
-    /* border: 1px solid red; */
-	margin: 5% 10% 0;
+	/* border: 1px solid red; */
 	display: flex;
-	flex-flow: row wrap;
-	img {
-		width: 25%;
-		object-fit: cover;
-		padding: 0.5% 0.5%;
-	}
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	.banner {
-		flex-basis: 100%;
-		text-align: center;
-		margin-bottom: 2%;
-	}
-	.banner Link {
 		color: ${pr => pr.theme.primaryDark};
+		margin: 1% 0;
 		&:hover {
-			color: ${pr => pr.theme.primaryHover};
+			color:  ${pr => pr.theme.primaryHover};
 		}
 	}
-	@media (max-width: ${({ theme }) => theme.tablet}) {
-		margin: 5% 5% 0;
+	.grid-container {
+		columns: 5 200px;
+		column-gap: 1rem;
+		width: 90%;
+		margin: 0 auto;
 		img {
-			width: 50%;
-		}
-	}
-	@media (max-width: ${({ theme }) => theme.mobile}) {
-		margin: 5% 5% 0;
-		img {
+			width: 150px;
+			margin: 0 1rem 1rem 0;
+			display: inline-block;
 			width: 100%;
+			padding: 5px;
+		}
+		@media (max-width: ${({ theme }) => theme.tablet}) {
+			columns: 2 200px;
+		}
+		@media (max-width: ${({ theme }) => theme.mobile}) {
+			columns: 1 200px;
 		}
 	}
 `

@@ -7,4 +7,8 @@ export const StyledHeader = styled.div`
         margin: 5.3rem 0 0 3rem;
         text-transform: lowercase;
     }
+    img {
+        margin: -3rem 0 0 3rem;
+        height: 10.6rem;
+    }
 `;

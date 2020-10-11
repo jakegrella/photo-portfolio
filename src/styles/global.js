@@ -37,9 +37,9 @@ export const GlobalStyles = createGlobalStyle`
 
 
   img {
-    border-radius: 5px;
-    height: auto;
-    width: 10rem;
+    /* border-radius: 5px; */
+    /* height: auto; */
+    /* width: 10rem; */
   }
 
   small {

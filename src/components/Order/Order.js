@@ -18,7 +18,7 @@ const Order = () => {
             <p>Please place your order before the end of the event.</p>
             <p className='address'>Important: Photos will either be given to the team coach or delivered to the billing address.</p>
             <PayPal />
-            <p className='questions'>Questions? Email me at <a href="mailto: jake@jakegrella.com">jake@jakegrella.com</a>.</p>
+            <p className='questions'>Questions? Email me <a href="mailto: jgrella13@gmail.com">here</a>.</p>
         </StyledOrder>
           );
         }
